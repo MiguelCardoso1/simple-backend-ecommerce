@@ -24,7 +24,7 @@ public class Cliente {
     private String endereço;
     private String logradouro;
     private String bairro;
-    private String cidade;
+    private String localidade;
     private String uf;
 
     @OneToMany(mappedBy = "cliente",cascade = CascadeType.ALL)
