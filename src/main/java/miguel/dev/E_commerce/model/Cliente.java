@@ -17,11 +17,15 @@ public class Cliente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-   private Long id;
+    private Long id;
 
     private String nome;
     private String senha;
     private String endereço;
+    private String logradouro;
+    private String bairro;
+    private String cidade;
+    private String uf;
 
     @OneToMany(mappedBy = "cliente",cascade = CascadeType.ALL)
     private List<Pedido> pedidos;
